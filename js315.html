@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<script type="text/javascript">
+		
+		function onblurF() {
+			alert(document.getElementById('texto').value);
+		}
+		function onchangeF() {
+			alert(document.getElementById('operacion').value);
+		}
+		function ondblclickF() {
+			alert(document.getElementById('boton').value);
+
+		}
+
+	</script>
+</head>
+<body>
+		<form name="formulario" id="formulario">
+			<input type="text" name="texto" placeholder="introduce un texto" id="texto" onblur="onblurF()">
+			<br><br>
+			<select id="operacion" name="operacion"  onchange="onchangeF()">
+									<option value='1'>Opcion 1</option>
+					  				<option value='2'>Opcion 2</option>
+					  				<option value='3'>Opcion 3</option>
+					  				
+		 	</select>
+		 	<br><br>
+		 	<input type="button" name="Salida" id="boton" value="boton" disabled  ondblclick="ondblclickF()">
+
+		</form>
+
+</body>
+</html>
